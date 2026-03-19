@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pristinecleaningapp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CleanerReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobsGottenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCustomerReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyForJobsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CleanerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CleanerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CleanerAccountAccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CleanerRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewCleanerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobQueueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnterJobIdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerAccountAccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

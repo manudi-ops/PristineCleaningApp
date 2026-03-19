@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Form"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Full Name -->
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="374dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Full name"
+        android:inputType="textPersonName" />
+
+    <!-- Address -->
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="381dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Address"
+        android:inputType="textPostalAddress" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="381dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="383dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Phone number"
+        android:inputType="phone" />
+
+    <!-- Terms and Conditions -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions\n*You will be assigned with a Customer ID, and henceforth you are to use it for your account log in and other activities within the system as your identifier.\n*You cannot delete or update a job after cleaner confirmation (check job status)."
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Customer ID Display -->
+    <TextView
+        android:id="@+id/customerIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Customer ID: "
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm registration and create account"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/download" />
+
+</LinearLayout>

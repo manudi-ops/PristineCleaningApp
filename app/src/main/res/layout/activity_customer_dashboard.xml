@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Add Job Button -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="361dp"
+        android:layout_height="67dp"
+        app:srcCompat="@drawable/download" />
+
+    <Button
+        android:id="@+id/addJobButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Job"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- See Queue Button -->
+    <Button
+        android:id="@+id/seeQueueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Queue"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- View Job Status Button -->
+    <Button
+        android:id="@+id/viewJobStatusButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Job Status"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- View My Reviews Button -->
+    <Button
+        android:id="@+id/viewMyReviewsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View My Reviews"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Review Cleaner Button -->
+    <Button
+        android:id="@+id/reviewCleanerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review Cleaner"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/together" />
+
+</LinearLayout>

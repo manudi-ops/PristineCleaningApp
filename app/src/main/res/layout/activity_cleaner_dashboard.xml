@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Apply for Jobs Button -->
+
+    <!-- Jobs I Got Button -->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="370dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/download" />
+
+    <Button
+        android:id="@+id/applyForJobsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:text="Apply for Jobs"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/jobsIGotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jobs I Got"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- View My Reviews Button -->
+    <Button
+        android:id="@+id/viewMyReviewsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View My Reviews"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Review Customer Button -->
+    <Button
+        android:id="@+id/reviewCustomerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:text="Review Customer"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/together" />
+</LinearLayout>
