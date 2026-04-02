@@ -45,14 +45,15 @@ public class JobsGottenActivity extends AppCompatActivity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Update the job statuses in the database
                 for (int i = 0; i < jobsLayout.getChildCount(); i++) {
                     View child = jobsLayout.getChildAt(i);
                     if (child instanceof LinearLayout) {
-                        CheckBox getCheckBox = ((LinearLayout) child).findViewById(R.id.getJobButton);
-                        CheckBox cancelCheckBox = null; // Use the assigned ID
-                        cancelCheckBox = ((LinearLayout) child).findViewById(cancelCheckBox.getId());
-                        TextView jobIdTextView = ((LinearLayout) child).findViewById(R.id.jobIdTextView);
+                        LinearLayout jobLayout = (LinearLayout) child;
+
+                        // FIX: Find checkboxes by their index position in the layout
+                        CheckBox getCheckBox = (CheckBox) jobLayout.getChildAt(3);
+                        CheckBox cancelCheckBox = (CheckBox) jobLayout.getChildAt(4);
+                        TextView jobIdTextView = (TextView) jobLayout.getChildAt(0);
 
                         String jobId = jobIdTextView.getText().toString().replace("Job ID: ", "");
                         if (getCheckBox.isChecked()) {
@@ -62,12 +63,11 @@ public class JobsGottenActivity extends AppCompatActivity {
                         }
                     }
                 }
-
                 Toast.makeText(JobsGottenActivity.this, "Job statuses updated", Toast.LENGTH_SHORT).show();
-                // Navigate back to the Cleaner Dashboard
                 Intent intent = new Intent(JobsGottenActivity.this, CleanerDashboardActivity.class);
+                intent.putExtra("CLEANER_ID", cleanerId);
                 startActivity(intent);
-                finish(); // Close the current activity
+                finish();
             }
         });
     }
