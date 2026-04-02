@@ -102,8 +102,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + COL_REVIEW_REVIEWER_ID + " INTEGER NOT NULL,"
             + COL_REVIEW_REVIEWEE_ID + " INTEGER NOT NULL,"
             + COL_REVIEW_TEXT + " TEXT NOT NULL);";
-    public static String CQL_JOB_ID;
-    public static String CQL_JOB_STATUS;
+    public static String CQL_JOB_ID = COL_JOB_ID;
+    public static String CQL_JOB_STATUS = COL_JOB_STATUS;
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
