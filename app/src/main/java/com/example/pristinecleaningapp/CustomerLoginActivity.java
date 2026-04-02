@@ -48,6 +48,7 @@ public class CustomerLoginActivity extends AppCompatActivity {
 
                         // Navigate to Customer Dashboard
                         Intent intent = new Intent(CustomerLoginActivity.this, CustomerDashboardActivity.class);
+                        intent.putExtra("CUSTOMER_ID", customerId);
                         startActivity(intent);
                         finish(); // Close the current activity
                     } else {

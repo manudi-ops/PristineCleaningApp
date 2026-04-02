@@ -16,6 +16,7 @@ public class CustomerDashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_dashboard);
+        String customerId = getIntent().getStringExtra("CUSTOMER_ID");
 
         // Initialize buttons
         addJobButton = findViewById(R.id.addJobButton);
@@ -30,6 +31,7 @@ public class CustomerDashboardActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Navigate to Add Job Activity
                 Intent intent = new Intent(CustomerDashboardActivity.this, AddJobActivity.class);
+                intent.putExtra("CUSTOMER_ID", customerId);
                 startActivity(intent);
             }
         });
