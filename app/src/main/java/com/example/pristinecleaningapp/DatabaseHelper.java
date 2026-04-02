@@ -515,8 +515,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     cursor.getString(0), // COL_CLEANER_ID
                     cursor.getString(1), // COL_CLEANER_FULL_NAME
                     cursor.getString(2), // COL_CLEANER_EMAIL
-                    cursor.getString(3), // COL_CLEANER_PHONE
-                    cursor.getString(4)  // COL_CLEANER_PASSWORD
+                    cursor.getString(4), // COL_CLEANER_PASSWORD ← swapped
+                    cursor.getString(3)  // COL_CLEANER_PHONE    ← swapped
             );
             cursor.close();
             return cleaner;
