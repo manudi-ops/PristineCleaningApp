@@ -38,6 +38,7 @@ public class CleanerLoginActivity extends AppCompatActivity {
                     if (dbHelper.checkCleaner(cleanerId, password)) {
                         Toast.makeText(CleanerLoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(CleanerLoginActivity.this, CleanerDashboardActivity.class);
+                        intent.putExtra("CLEANER_ID", cleanerId);
                         startActivity(intent);
                     } else {
                         Toast.makeText(CleanerLoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
